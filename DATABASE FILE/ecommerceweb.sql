@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th6 30, 2022 lúc 05:25 PM
+-- Thời gian đã tạo: Th6 30, 2022 lúc 07:38 PM
 -- Phiên bản máy phục vụ: 10.4.11-MariaDB
 -- Phiên bản PHP: 7.4.1
 
@@ -375,7 +375,7 @@ CREATE TABLE `tbl_customer` (
 --
 
 INSERT INTO `tbl_customer` (`cust_id`, `cust_name`, `cust_cname`, `cust_email`, `cust_phone`, `cust_country`, `cust_address`, `cust_city`, `cust_state`, `cust_zip`, `cust_b_name`, `cust_b_cname`, `cust_b_phone`, `cust_b_country`, `cust_b_address`, `cust_b_city`, `cust_b_state`, `cust_b_zip`, `cust_s_name`, `cust_s_cname`, `cust_s_phone`, `cust_s_country`, `cust_s_address`, `cust_s_city`, `cust_s_state`, `cust_s_zip`, `cust_password`, `cust_token`, `cust_datetime`, `cust_timestamp`, `cust_status`) VALUES
-(1, 'Liam Moore', 'WV Company', 'liam@mail.com', '7458965410', 230, '788 Cottonwood Lane', 'Nashville', 'TN', '37072', '', '', '', 0, '', '', '', '', '', '', '', 0, '', '', '', '', '5f4dcc3b5aa765d61d8327deb882cf99', '0081e99a29cacd4b553db15c5c5c047e', '2022-03-17 11:09:34', '1647544174', 1),
+(1, 'Liam Moore', 'WV Company', 'liam@mail.com', '7458965410', 230, '788 Cottonwood Lane', 'Nashville', 'TN', '37072', 'Minh Duc', 'VNUK', '6572599999', 230, '9236 SE Woodstock Blvd', 'Portland', 'OR', '97266', 'Minh Duc', 'VNUK', '6572599999', 230, '9236 SE Woodstock Blvd', 'Portland', 'OR', '97266', '5f4dcc3b5aa765d61d8327deb882cf99', '0081e99a29cacd4b553db15c5c5c047e', '2022-03-17 11:09:34', '1647544174', 1),
 (2, 'Chad N. Carney', 'none', 'chad@mail.com', '4785690000', 230, '469 Diamond Street', 'Charlotte', 'NC', '28808', 'Chad N. Carney', 'none', '7477474440', 230, '469 Diamond Street', 'Charlotte', 'NC', '28808', 'Chad N. Carney', 'none', '7477474440', 230, '469 Diamond Street', 'Charlotte', 'NC', '28808', '5f4dcc3b5aa765d61d8327deb882cf99', 'ca87666426f4bc5c5128a96dabfecefb', '2022-03-17 11:15:26', '1647544526', 1),
 (3, 'Jean Collins', 'none', 'jean@mail.com', '1478523698', 230, '1508 Crosswind Drive', 'Owensboro', 'KY', '13040', 'Jean Collins', 'none', '1478523698', 230, '1508 Crosswind Drive', 'Owensboro', 'KY', '13040', 'Jean Collins', 'none', '1478523698', 230, '1508 Crosswind Drive', 'Owensboro', 'KY', '13040', '5f4dcc3b5aa765d61d8327deb882cf99', '6b3439bf95644a36a1ed92bef374ebb7', '2022-03-20 10:29:39', '1647797379', 1),
 (4, 'Annie Young', 'XYZ Company', 'annie@mail.com', '7770001144', 230, '79 Burwell Heights Road', 'Beaumont', 'TX', '77400', '', '', '', 0, '', '', '', '', '', '', '', 0, '', '', '', '', '5f4dcc3b5aa765d61d8327deb882cf99', 'fc8f07537cdd6b3f89eb94f1cad78060', '2022-03-20 10:31:35', '1647797495', 1),
@@ -385,7 +385,8 @@ INSERT INTO `tbl_customer` (`cust_id`, `cust_name`, `cust_cname`, `cust_email`, 
 (8, 'Benjamin B. Louque', 'none', 'benjamin@mail.com', '7777889955', 230, '32 Bridge Street', 'Tulsa', 'OK', '74220', '', '', '', 0, '', '', '', '', '', '', '', 0, '', '', '', '', '5f4dcc3b5aa765d61d8327deb882cf99', '5a0e096368f9669508af7b7203382b07', '2022-03-20 10:36:31', '1647797791', 1),
 (9, 'Joe K. Richardson', 'none', 'joe@mail.com', '4444445555', 230, '17 Derek Drive', 'Youngstown', 'OH', '44500', '', '', '', 0, '', '', '', '', '', '', '', 0, '', '', '', '', '5f4dcc3b5aa765d61d8327deb882cf99', 'e74ac0178d7833988d4b1625c42ba26e', '2022-03-20 10:37:18', '1647797838', 1),
 (10, 'Will Williams', 'Test Company', 'williams@mail.com', '7410000000', 230, '39 Marcus Street', 'Anniston', 'AL', '37207', 'Will Williams', 'Test Company', '7410000000', 230, '39 Marcus Street', 'Anniston', 'AL', '37207', 'Will Williams', 'Test Company', '7410000000', 230, '39 Marcus Street', 'Anniston', 'AL', '37207', '5f4dcc3b5aa765d61d8327deb882cf99', '941c9265fb920f691cf01b12a15f80f8', '2022-03-20 11:15:59', '1647800159', 1),
-(14, 'Minh Duc', '', 'test1@gmail.com', '6572599999', 230, '9236 SE Woodstock Blvd', 'Portland', 'OR', '97266', '', '', '', 0, '', '', '', '', '', '', '', 0, '', '', '', '', '25f9e794323b453885f5181f1b624d0b', '69b168fa7972f716d0dac8dba9b36d26', '2022-06-29 10:12:58', '1656565978', 1);
+(14, 'Minh Duc', '', 'test1@gmail.com', '6572599999', 230, '9236 SE Woodstock Blvd', 'Portland', 'OR', '97266', '', '', '', 0, '', '', '', '', '', '', '', 0, '', '', '', '', '25f9e794323b453885f5181f1b624d0b', '69b168fa7972f716d0dac8dba9b36d26', '2022-06-29 10:12:58', '1656565978', 1),
+(15, 'Minh Duc', '', 'duc.nguyen200219@vnuk.edu.vn', '6572599999', 230, '9236 SE Woodstock Blvd', ' Portland', 'Oregon', '97266', '', '', '', 0, '', '', '', '', '', '', '', 0, '', '', '', '', '25d55ad283aa400af464c76d713c07ad', '80d50479f702a9cb65ebaf8b9a2ab254', '2022-06-30 09:35:51', '1656606951', 0);
 
 -- --------------------------------------------------------
 
@@ -420,29 +421,6 @@ CREATE TABLE `tbl_end_category` (
 INSERT INTO `tbl_end_category` (`ecat_id`, `ecat_name`, `mcat_id`) VALUES
 (80, 'Doodles', 17),
 (81, 'BidenCrypto ', 16);
-
--- --------------------------------------------------------
-
---
--- Cấu trúc bảng cho bảng `tbl_faq`
---
-
-CREATE TABLE `tbl_faq` (
-  `faq_id` int(11) NOT NULL,
-  `faq_title` varchar(255) NOT NULL,
-  `faq_content` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Đang đổ dữ liệu cho bảng `tbl_faq`
---
-
-INSERT INTO `tbl_faq` (`faq_id`, `faq_title`, `faq_content`) VALUES
-(1, '\r\nHow do I set up 2FA?', '<h3 class=\"checkout-complete-box font-bold txt16\" style=\"box-sizing: inherit; text-rendering: optimizeLegibility; margin: 0.2rem 0px 0.5rem; padding: 0px; line-height: 1.4; background-color: rgb(250, 250, 250);\"><font color=\"#222222\" face=\"opensans, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif\"><span style=\"font-size: 15.7143px;\">Which authenticators should I use?\r\nProviding strong security and a great user experience are always our top priorities and we support various authenticators. There’s a great authenticator app we would like to recommend to you - Authy (Android) / Twilio Authy (iOS). Authy is not only supporting generating a time-dependent 6-digit code like other authenticators in the market but also offering the following features:</span></font></h3><h3 class=\"checkout-complete-box font-bold txt16\" style=\"box-sizing: inherit; text-rendering: optimizeLegibility; margin: 0.2rem 0px 0.5rem; padding: 0px; line-height: 1.4; background-color: rgb(250, 250, 250);\"><span style=\"font-size: 15.7143px; color: rgb(34, 34, 34); font-family: opensans, \"Helvetica Neue\", Helvetica, Helvetica, Arial, sans-serif;\">2FA tokens automatically sync to any new device you authorize. And, if a device is lost, stolen, or retired, you can deauthorize it from any authorized device just as quickly.!</span></h3>\r\n'),
-(2, 'Value Transfer Requirements (‘Travel Rule’)', '<p><span style=\"color: rgb(10, 10, 10); font-family: opensans, &quot;Helvetica Neue&quot;, Helvetica, Helvetica, Arial, sans-serif; font-size: 14px; text-align: center;\">On 1 June 2019, the Financial Action Task Force (FATF) officially adopted what is known as the Travel Rule. The regulation relates to the gathering and transmission of required names and account details of the parties involved in digital asset transfers between financial institutions.</span><br></p>\r\n'),
-(3, 'Does BidenCrypto.com hold private keys to the cryptocurrency wallets?', '<p>In this stage of our app development, we hold the private keys, just like Coinbase and the majority of the exchanges. \r\nEven though you might not hold your private keys, your data and assets are extremely safe with us as we have the best cold storage in the industry and the highest insurance coverage.\r\nIt is much easier for you to recover your account than if you had private keys.\r\n\r\nWe have functionalities like Pay Your Friends that give you a better experience than a wallet with private keys.\r\n\r\n<br></p>\r\n'),
-(4, 'Are my funds in the BidenCrypto.com insured?', '<p class=\"a  \" style=\"box-sizing: inherit; text-rendering: optimizeLegibility; line-height: 1.6; margin-bottom: 0.714286rem; padding: 0px; font-size: 14px; color: rgb(10, 10, 10); font-family: opensans, &quot;Helvetica Neue&quot;, Helvetica, Helvetica, Arial, sans-serif; background-color: rgb(250, 250, 250);\">Crypto.com is committed to the security of its platform and believes in a proactive \"Defense in Depth\" culture approach, where we embed a security growth mindset into all aspects of our business processes.Crypto.com has secured a US $100M direct insurance policy led by Arch Underwriting at Lloyd\'s Syndicate 2012. This is the largest coverage that Crypto.com has secured for its cold storage assets on custodial partner Ledger Vault. The new policy brings Crypto.com’s total cryptocurrency insurance to $750M, including direct and indirect coverage via custodians. This will significantly expand security protection for Crypto.com’s growing user base against physical damage or destruction, and third-party theft</p>\r\n'),
-(5, 'Is there a BidenCrypto.com web-app?', '<p>We prefer to build mobile first - there is no reason for you to use a desktop if we deliver a design that works brilliantly on your phone. \r\n\r\nMore broadly, we believe there is an enormous opportunity in crypto space to build great mobile experiences.</p>');
 
 -- --------------------------------------------------------
 
@@ -826,7 +804,8 @@ CREATE TABLE `tbl_product` (
 
 INSERT INTO `tbl_product` (`p_id`, `p_name`, `p_old_price`, `p_current_price`, `p_qty`, `p_featured_photo`, `p_description`, `p_short_description`, `p_feature`, `p_condition`, `p_return_policy`, `p_total_view`, `p_is_featured`, `p_is_active`, `ecat_id`) VALUES
 (103, 'Doodle #1921', '', '12.4', 1, 'product-featured-103.png', '', '', '', '', '', 0, 0, 1, 80),
-(104, 'Doodle #4971', '', '13.2', 1, 'product-featured-104.png', '', '', '', '', '', 0, 1, 1, 80);
+(104, 'Doodle #4971', '', '13.2', 1, 'product-featured-104.png', '', '', '', '', '', 3, 1, 1, 80),
+(105, 'bla', '', '12', 1, 'product-featured-105.png', '', '', '', '', '', 0, 0, 1, 80);
 
 -- --------------------------------------------------------
 
@@ -889,7 +868,8 @@ INSERT INTO `tbl_product_color` (`id`, `color_id`, `p_id`) VALUES
 (173, 2, 82),
 (174, 4, 82),
 (268, 7, 103),
-(269, 14, 104);
+(269, 14, 104),
+(272, 2, 105);
 
 -- --------------------------------------------------------
 
@@ -1018,7 +998,8 @@ INSERT INTO `tbl_product_size` (`id`, `size_id`, `p_id`) VALUES
 (262, 3, 82),
 (263, 4, 82),
 (448, 26, 103),
-(449, 26, 104);
+(449, 26, 104),
+(452, 26, 105);
 
 -- --------------------------------------------------------
 
@@ -1141,7 +1122,7 @@ CREATE TABLE `tbl_settings` (
 --
 
 INSERT INTO `tbl_settings` (`id`, `logo`, `favicon`, `footer_about`, `footer_copyright`, `contact_address`, `contact_email`, `contact_phone`, `contact_fax`, `contact_map_iframe`, `receive_email`, `receive_email_subject`, `receive_email_thank_you_message`, `forget_password_message`, `total_recent_post_footer`, `total_popular_post_footer`, `total_recent_post_sidebar`, `total_popular_post_sidebar`, `total_featured_product_home`, `total_latest_product_home`, `total_popular_product_home`, `meta_title_home`, `meta_keyword_home`, `meta_description_home`, `banner_login`, `banner_registration`, `banner_forget_password`, `banner_reset_password`, `banner_search`, `banner_cart`, `banner_checkout`, `banner_product_category`, `banner_blog`, `cta_title`, `cta_content`, `cta_read_more_text`, `cta_read_more_url`, `cta_photo`, `featured_product_title`, `featured_product_subtitle`, `latest_product_title`, `latest_product_subtitle`, `popular_product_title`, `popular_product_subtitle`, `testimonial_title`, `testimonial_subtitle`, `testimonial_photo`, `blog_title`, `blog_subtitle`, `newsletter_text`, `paypal_email`, `stripe_public_key`, `stripe_secret_key`, `bank_detail`, `before_head`, `after_body`, `before_body`, `home_service_on_off`, `home_welcome_on_off`, `home_featured_product_on_off`, `home_latest_product_on_off`, `home_popular_product_on_off`, `home_testimonial_on_off`, `home_blog_on_off`, `newsletter_on_off`, `ads_above_welcome_on_off`, `ads_above_featured_product_on_off`, `ads_above_latest_product_on_off`, `ads_above_popular_product_on_off`, `ads_above_testimonial_on_off`, `ads_category_sidebar_on_off`) VALUES
-(1, 'logo.png', 'favicon.png', '<p>Lorem ipsum dolor sit amet, omnis signiferumque in mei, mei ex enim concludaturque. Senserit salutandi euripidis no per, modus maiestatis scribentur est an.Â Ea suas pertinax has.</p>\r\n', 'Copyright © 2022 - BidenCrypto', '158A Le Loi Str., Hai Chau District, Danang, Vietnam', 'support@bidencrypto.com', '0905678910JQK', '', '<iframe src=\"https://maps.google.com/maps?q=VNUK&t=&z=17&ie=UTF8&iwloc=&output=embed\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"></iframe>', 'support@bidencrypto.com', 'Visitor Email Message from BidenCrypto', 'Thank you for sending email. We will contact you shortly.', 'A confirmation link is sent to your email address. You will get the password reset information in there.', 4, 4, 5, 5, 5, 6, 8, 'BidenCrypto', 'nft, collectibles, cryptocurrency', 'A project from BC team', 'banner_login.jpg', 'banner_registration.jpg', 'banner_forget_password.jpg', 'banner_reset_password.jpg', 'banner_search.jpg', 'banner_cart.jpg', 'banner_checkout.jpg', 'banner_product_category.jpg', 'banner_blog.jpg', 'Welcome To Our Ecommerce Website', 'Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine propriae quo no, unum ridens expetenda id sit, \r\nat usu eius eligendi singulis. Sea ocurreret principes ne. At nonumy aperiri pri, nam quodsi copiosae intellegebat et, ex deserunt euripidis usu. ', 'Read More', '#', 'cta.jpg', 'Featured Products', 'Our list on Top Featured Products', 'Latest Products', 'Our list of recently added products', 'Popular Products', 'Popular products based on customer\'s choice', 'Testimonials', 'See what our clients tell about us', 'testimonial.jpg', 'Latest Blog', 'See all our latest articles and news from below', 'Sign-up to our newsletter for latest promotions and discounts.', 'admin@bidencrypto.com', 'pk_test_0SwMWadgu8DwmEcPdUPRsZ7b', 'sk_test_TFcsLJ7xxUtpALbDo1L5c1PN', 'Bank Name: Vietcombank\r\nAccount Number: CA100270589600\r\nBranch Name: Danang Branch\r\nCountry: VN', '', '<div id=\"fb-root\"></div>\r\n<script>(function(d, s, id) {\r\n  var js, fjs = d.getElementsByTagName(s)[0];\r\n  if (d.getElementById(id)) return;\r\n  js = d.createElement(s); js.id = id;\r\n  js.src = \"//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=323620764400430\";\r\n  fjs.parentNode.insertBefore(js, fjs);\r\n}(document, \'script\', \'facebook-jssdk\'));</script>', '<!--Start of Tawk.to Script-->\r\n<script type=\"text/javascript\">\r\nvar Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();\r\n(function(){\r\nvar s1=document.createElement(\"script\"),s0=document.getElementsByTagName(\"script\")[0];\r\ns1.async=true;\r\ns1.src=\'https://embed.tawk.to/5ae370d7227d3d7edc24cb96/default\';\r\ns1.charset=\'UTF-8\';\r\ns1.setAttribute(\'crossorigin\',\'*\');\r\ns0.parentNode.insertBefore(s1,s0);\r\n})();\r\n</script>\r\n<!--End of Tawk.to Script-->', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1);
+(1, 'logo.png', 'favicon.png', '<p>Lorem ipsum dolor sit amet, omnis signiferumque in mei, mei ex enim concludaturque. Senserit salutandi euripidis no per, modus maiestatis scribentur est an.Â Ea suas pertinax has.</p>\r\n', 'Copyright © 2022 - BidenCrypto', '158A Le Loi Str., Hai Chau District, Danang, Vietnam', 'support@bidencrypto.com', '0905678910JQK', '', '<iframe src=\"https://maps.google.com/maps?q=VNUK&t=&z=17&ie=UTF8&iwloc=&output=embed\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"></iframe>', 'support@bidencrypto.com', 'Visitor Email Message from BidenCrypto', 'Thank you for sending email. We will contact you shortly.', 'A confirmation link is sent to your email address. You will get the password reset information in there.', 4, 4, 5, 5, 5, 6, 8, 'BidenCrypto', 'nft, collectibles, cryptocurrency', 'A project from BC team', 'banner_login.jpg', 'banner_registration.jpg', 'banner_forget_password.jpg', 'banner_reset_password.jpg', 'banner_search.jpg', 'banner_cart.jpg', 'banner_checkout.jpg', 'banner_product_category.jpg', 'banner_blog.jpg', 'Welcome To Our Ecommerce Website', 'Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine propriae quo no, unum ridens expetenda id sit, \r\nat usu eius eligendi singulis. Sea ocurreret principes ne. At nonumy aperiri pri, nam quodsi copiosae intellegebat et, ex deserunt euripidis usu. ', 'Read More', '#', 'cta.jpg', 'Featured Products', 'Our list on Top Featured Products', 'Latest Products', 'Our list of recently added products', 'Popular Products', 'Popular products based on customer\'s choice', 'Testimonials', 'See what our clients tell about us', 'testimonial.jpg', 'Latest Blog', 'See all our latest articles and news from below', 'Sign-up to our newsletter for latest promotions and discounts.', 'admin@bidencrypto.com', 'pk_test_0SwMWadgu8DwmEcPdUPRsZ7b', 'sk_test_TFcsLJ7xxUtpALbDo1L5c1PN', 'Bank Name: Vietcombank\r\nAccount Number: CA100270589600\r\nBranch Name: Danang Branch\r\nCountry: VN', '', '', '', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -1263,31 +1244,6 @@ INSERT INTO `tbl_social` (`social_id`, `social_name`, `social_url`, `social_icon
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `tbl_subscriber`
---
-
-CREATE TABLE `tbl_subscriber` (
-  `subs_id` int(11) NOT NULL,
-  `subs_email` varchar(255) NOT NULL,
-  `subs_date` varchar(100) NOT NULL,
-  `subs_date_time` varchar(100) NOT NULL,
-  `subs_hash` varchar(255) NOT NULL,
-  `subs_active` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Đang đổ dữ liệu cho bảng `tbl_subscriber`
---
-
-INSERT INTO `tbl_subscriber` (`subs_id`, `subs_email`, `subs_date`, `subs_date_time`, `subs_hash`, `subs_active`) VALUES
-(1, 'ruth@mail.com', '2022-03-20', '2022-03-20 10:25:18', 'f4eabc1afed38a08da8d1c6e5fb42187', 1),
-(4, 'morgan.sarahh5@mail.com', '2022-03-20', '2022-03-20 10:27:48', 'bcdeda095a6c882803fc3aaf4a17f08e', 1),
-(5, 'greenwd1154@mail.com', '2022-03-20', '2022-03-20 10:28:09', '279ecfe9debbb091c664641f534857ee', 1),
-(6, 'awsm785@mail.com', '2022-03-20', '2022-03-20 10:28:21', '94096ae01fc65e71c50c7843d096e041', 1);
-
--- --------------------------------------------------------
-
---
 -- Cấu trúc bảng cho bảng `tbl_top_category`
 --
 
@@ -1384,12 +1340,6 @@ ALTER TABLE `tbl_customer_message`
 --
 ALTER TABLE `tbl_end_category`
   ADD PRIMARY KEY (`ecat_id`);
-
---
--- Chỉ mục cho bảng `tbl_faq`
---
-ALTER TABLE `tbl_faq`
-  ADD PRIMARY KEY (`faq_id`);
 
 --
 -- Chỉ mục cho bảng `tbl_language`
@@ -1500,18 +1450,6 @@ ALTER TABLE `tbl_slider`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `tbl_social`
---
-ALTER TABLE `tbl_social`
-  ADD PRIMARY KEY (`social_id`);
-
---
--- Chỉ mục cho bảng `tbl_subscriber`
---
-ALTER TABLE `tbl_subscriber`
-  ADD PRIMARY KEY (`subs_id`);
-
---
 -- Chỉ mục cho bảng `tbl_top_category`
 --
 ALTER TABLE `tbl_top_category`
@@ -1549,7 +1487,7 @@ ALTER TABLE `tbl_country`
 -- AUTO_INCREMENT cho bảng `tbl_customer`
 --
 ALTER TABLE `tbl_customer`
-  MODIFY `cust_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `cust_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT cho bảng `tbl_customer_message`
@@ -1562,12 +1500,6 @@ ALTER TABLE `tbl_customer_message`
 --
 ALTER TABLE `tbl_end_category`
   MODIFY `ecat_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=82;
-
---
--- AUTO_INCREMENT cho bảng `tbl_faq`
---
-ALTER TABLE `tbl_faq`
-  MODIFY `faq_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT cho bảng `tbl_language`
@@ -1615,13 +1547,13 @@ ALTER TABLE `tbl_post`
 -- AUTO_INCREMENT cho bảng `tbl_product`
 --
 ALTER TABLE `tbl_product`
-  MODIFY `p_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=105;
+  MODIFY `p_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=106;
 
 --
 -- AUTO_INCREMENT cho bảng `tbl_product_color`
 --
 ALTER TABLE `tbl_product_color`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=270;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=273;
 
 --
 -- AUTO_INCREMENT cho bảng `tbl_product_photo`
@@ -1633,7 +1565,7 @@ ALTER TABLE `tbl_product_photo`
 -- AUTO_INCREMENT cho bảng `tbl_product_size`
 --
 ALTER TABLE `tbl_product_size`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=450;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=453;
 
 --
 -- AUTO_INCREMENT cho bảng `tbl_rating`
@@ -1676,18 +1608,6 @@ ALTER TABLE `tbl_size`
 --
 ALTER TABLE `tbl_slider`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
--- AUTO_INCREMENT cho bảng `tbl_social`
---
-ALTER TABLE `tbl_social`
-  MODIFY `social_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
-
---
--- AUTO_INCREMENT cho bảng `tbl_subscriber`
---
-ALTER TABLE `tbl_subscriber`
-  MODIFY `subs_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT cho bảng `tbl_top_category`
