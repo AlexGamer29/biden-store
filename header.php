@@ -145,13 +145,6 @@ foreach ($result as $row) {
 		<meta name="description" content="<?php echo $about_meta_description; ?>">
 	<?php
 	}
-	if ($cur_page == 'faq.php') {
-	?>
-		<title><?php echo $faq_meta_title; ?></title>
-		<meta name="keywords" content="<?php echo $faq_meta_keyword; ?>">
-		<meta name="description" content="<?php echo $faq_meta_description; ?>">
-	<?php
-	}
 	if ($cur_page == 'contact.php') {
 	?>
 		<title><?php echo $contact_meta_title; ?></title>
@@ -226,7 +219,6 @@ foreach ($result as $row) {
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
-	<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5993ef01e2587a001253a261&product=inline-share-buttons"></script>
 
 	<?php echo $before_head; ?>
 
@@ -397,7 +389,6 @@ foreach ($result as $row) {
 								?>
 
 								<li><a href="about.php"><?php echo $about_title; ?></a></li>
-								<li><a href="faq.php"><?php echo $faq_title; ?></a></li>
 
 								<li><a href="contact.php"><?php echo $contact_title; ?></a></li>
 							</ul>
